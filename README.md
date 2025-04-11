@@ -68,7 +68,7 @@ Kate Manne，Down Girl: The Logic of Misogyny，Oxford University Press，2017�
 >
 > `title:` 后是词条名，也是网页目录
 >
-> `description:`后是词条描述，**不要换行！**请简短的描述词条，在网站搜索时标题下面的内容即为此处
+> `description:`后是词条描述，不要换行！不要换行！请简短的描述词条，在网站搜索时标题下面的内容即为此处
 >
 > `date:`后是编写时间，请按照 `xxxx-xx-xx` 的格式填写时间
 
