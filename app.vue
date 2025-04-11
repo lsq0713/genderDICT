@@ -9,6 +9,9 @@
                         <NuxtLink to="/" class="hover:underline">首页</NuxtLink>
                     </li>
                     <li>
+                        <NuxtLink to="/search" class="block hover:underline">检索</NuxtLink>
+                    </li>
+                    <li>
                         <NuxtLink to="/contact" class="hover:underline">联系我们</NuxtLink>
                     </li>
                 </ul>
@@ -25,6 +28,9 @@
             <ul v-if="isMobileMenuOpen" class="md:hidden bg-blue-600 text-white space-y-2 p-4">
                 <li>
                     <NuxtLink to="/" class="block hover:underline">首页</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/search" class="block hover:underline">检索</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="/contact" class="block hover:underline">联系我们</NuxtLink>
