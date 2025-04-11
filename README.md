@@ -1,8 +1,8 @@
-# 性别研究词典
+# 性别研究词典 (Demo)
 
-本项目是复旦大学25春《性别与历史》课程关于“性别研究词典”项目的网站
+本项目是复旦大学25春《性别与历史》课程关于“性别研究词典”项目的网站（试开发）
 
-## 技术栈及推荐参考资料
+## 技术栈
 
 本项目基于 Nuxt3 + tailwindCSS + Nuxt Content 开发
 
@@ -21,5 +21,7 @@
 中文文档：[Tailwind CSS - 只需书写 HTML 代码，无需书写 CSS，即可快速构建美观的网站。 | TailwindCSS中文文档 | TailwindCSS中文网](https://www.tailwindcss.cn/)
 
 ### Nuxt Content
+
+> 注：当前使用版本为 v3.4.0
 
 官方文档：[The git-based CMS for Nuxt projects.](https://content.nuxt.com/)
