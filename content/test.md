@@ -1,6 +1,7 @@
 ---
-title: 厌女症
-date: 2020-11-11
+title: '厌女症'
+description: '样例词条：厌女症'
+date: 2025-4-11
 ---
 # 厌女症
 
@@ -19,6 +20,6 @@ Kate Manne，Down Girl: The Logic of Misogyny，Oxford University Press，2017�
 
 新东方董事长俞敏洪曾声称“衡量和评价的方向决定了教育的方向，比如，中国女人挑选男人的标准是要男人会赚钱，至于良心好不好不管，所以中国女性的堕落导致了国家的堕落。” 这一言论即是典型的厌女表现。参照：[俞敏洪道歉了，但这个时代的厌女症远没结束](http://www.bjnews.com.cn/culture/2018/11/19/522800.html)
 
-## 延申阅读
+## 延伸阅读
 
 [我遭遇过的厌女症](https://www.douban.com/gallery/topic/32/)
