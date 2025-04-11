@@ -49,16 +49,13 @@
         </header>
 
         <!-- 主体 -->
-        <div class="flex flex-grow">
+        <div class="flex flex-grow relative">
             <!-- 左侧侧边栏 -->
             <aside :class="[
-                'bg-gray-100 p-4 overflow-y-auto transition-all duration-300',
-                isSidebarOpen ? 'w-1/4' : 'w-0'
+                'bg-gray-100 p-4 overflow-y-auto transition-all duration-300 h-full',
+                isSidebarOpen ? 'w-1/4' : 'w-0 opacity-0'
             ]">
-                <button class="mb-4 text-gray-700 hover:text-blue-500 focus:outline-none" @click="toggleSidebar">
-                    {{ isSidebarOpen ? '收起索引' : '展开索引' }}
-                </button>
-                <ul v-if="isSidebarOpen">
+                <ul v-if="isSidebarOpen" class="mt-10">
                     <li v-for="post in posts" :key="post.id" class="mb-2">
                         <NuxtLink :to="post.path" class="block text-gray-700 hover:text-blue-500">
                             {{ post.title }}
@@ -66,6 +63,20 @@
                     </li>
                 </ul>
             </aside>
+
+            <!-- 浮动按钮 -->
+            <button @click="toggleSidebar"
+                class="absolute left-0 top-1/2 z-10 -translate-y-1/2 transform flex items-center gap-2 px-3 py-2 rounded-r-lg transition-all duration-200 shadow-md"
+                :class="[
+                    isSidebarOpen
+                        ? 'bg-blue-100 text-blue-600 hover:bg-blue-200'
+                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                ]">
+                <Icon :name="isSidebarOpen ? 'i-lucide-chevron-left' : 'i-lucide-chevron-right'" class="w-5 h-5" />
+                <span class="font-medium">
+                    {{ isSidebarOpen ? '收起' : '展开' }}
+                </span>
+            </button>
 
             <!-- 右侧内容 -->
             <main :class="[isSidebarOpen ? 'w-3/4' : 'w-full', 'p-6 overflow-y-auto']">
@@ -76,8 +87,7 @@
         <!-- 页脚 -->
         <footer class="bg-gray-800 text-white py-4">
             <div class="container mx-auto text-center">
-                <p>&copy; 2025 性别名词词典. 版权所有.</p>
-                <!-- <p class="text-sm">由 <a href="https://nuxt.com" class="text-blue-400 hover:underline">Nuxt3</a> 和 <a href="https://tailwindcss.com" class="text-blue-400 hover:underline">TailwindCSS</a> 提供支持。</p> -->
+                <p>&copy; 2025 性别研究词典. 版权所有.</p>
             </div>
         </footer>
     </div>
@@ -109,6 +119,5 @@ const toggleMobileMenu = () => {
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
-    /* 始终显示垂直滚动条 */
 }
 </style>
