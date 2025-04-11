@@ -11,3 +11,8 @@ body {
 .prose a:not(h2 a, h3 a, h4 a, h5 a, h6 a, button a) {
     @apply text-indigo-500 dark:text-indigo-400;
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll; /* 始终显示垂直滚动条 */
+}

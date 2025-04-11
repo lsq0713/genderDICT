@@ -14,6 +14,11 @@
                     <li>
                         <NuxtLink to="/contact" class="hover:underline">联系我们</NuxtLink>
                     </li>
+                    <li>
+                        <NuxtLink to="https://gitee.com/lessen/gender-dict" class="hover:underline">
+                            <Icon name="i-simple-icons-gitee" style="color: white" />
+                        </NuxtLink>
+                    </li>
                 </ul>
                 <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-white focus:outline-none" @click="toggleMobileMenu">
@@ -34,6 +39,11 @@
                 </li>
                 <li>
                     <NuxtLink to="/contact" class="block hover:underline">联系我们</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="https://gitee.com/lessen/gender-dict" class="hover:underline">
+                        <Icon name="i-simple-icons-gitee" style="color: white" />
+                    </NuxtLink>
                 </li>
             </ul>
         </header>
@@ -98,5 +108,7 @@ const toggleMobileMenu = () => {
 <style scoped>
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    /* 始终显示垂直滚动条 */
 }
 </style>
