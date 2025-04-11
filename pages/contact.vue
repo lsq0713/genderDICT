@@ -2,7 +2,7 @@
     <section class="text-center">
         <h2 class="text-4xl font-bold mb-4">联系我们</h2>
         <p class="text-lg text-gray-700 mb-6">
-            我们致力于提供全面的性别相关名词解释，帮助您更好地理解性别多样性。
+            嘟嘟嘟，先不告诉你！	&#128515; <br />
         </p>
     </section>
 </template>

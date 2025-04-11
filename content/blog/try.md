@@ -1,7 +1,7 @@
 ---
-title: 示例文档
+title: 测试词条
 slug: try
-description: 这是一个用于测试的示例文档。
+description: 这是一个用于测试的示例词条。
 ---
 
 # 示例文档
