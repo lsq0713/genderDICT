@@ -50,6 +50,11 @@
                         <Icon name="i-simple-icons-gitee" style="color: white" />
                     </NuxtLink>
                 </li>
+                <li>
+                    <NuxtLink to="https://github.com/lsq0713/genderDICT" class="hover:underline">
+                        <Icon name="i-simple-icons-github" style="color: white" />
+                    </NuxtLink>
+                </li>
             </ul>
         </header>
 
