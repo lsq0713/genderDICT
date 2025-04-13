@@ -66,7 +66,7 @@
 
             <!-- 浮动按钮 -->
             <button @click="toggleSidebar"
-                class="absolute left-0 top-1/2 z-10 -translate-y-1/2 transform flex items-center gap-2 px-3 py-2 rounded-r-lg transition-all duration-200 shadow-md"
+                class="fixed left-0 top-1/2 z-10 -translate-y-1/2 transform flex items-center gap-2 px-3 py-2 rounded-r-lg transition-all duration-200 shadow-md"
                 :class="[
                     isSidebarOpen
                         ? 'bg-blue-100 text-blue-600 hover:bg-blue-200'
