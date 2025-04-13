@@ -108,6 +108,22 @@
 import { ref } from 'vue'
 import { useAsyncData } from '#app'
 
+useHead({
+    title: '性别研究词典',
+    meta: [
+        { name: 'description', content: '性别研究词典是一个致力于提供全面的性别相关名词解释的平台。' }
+    ]
+})
+
+useSeoMeta({
+    title: '性别研究词典',
+    ogTitle: '性别研究词典',
+    description: '性别研究词典是一个致力于提供全面的性别相关名词解释的平台。',
+    ogDescription: '性别研究词典是一个致力于提供全面的性别相关名词解释的平台。',
+    // ogImage: 'https://example.com/image.png',
+    // twitterCard: 'summary_large_image',
+})
+
 // 获取内容数据
 const { data: posts } = await useAsyncData('entries', () =>
     queryCollection('entries').all()
