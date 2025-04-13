@@ -122,7 +122,7 @@ A.A
 
 ## 技术栈<a id="section3"></a>
 
-本项目基于 Nuxt3 + tailwindCSS + Nuxt Content 开发
+本项目基于 Nuxt3 + tailwindCSS + Nuxt Content + MiniSearch 开发
 
 ### Nuxt3
 
