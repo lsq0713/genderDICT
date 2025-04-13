@@ -109,8 +109,8 @@ import { ref } from 'vue'
 import { useAsyncData } from '#app'
 
 // 获取内容数据
-const { data: posts } = await useAsyncData('content', () =>
-    queryCollection('content').all()
+const { data: posts } = await useAsyncData('entries', () =>
+    queryCollection('entries').all()
 )
 
 // 控制侧边栏状态
