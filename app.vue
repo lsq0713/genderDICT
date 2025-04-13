@@ -19,6 +19,11 @@
                             <Icon name="i-simple-icons-gitee" style="color: white" />
                         </NuxtLink>
                     </li>
+                    <li>
+                        <NuxtLink to="https://github.com/lsq0713/genderDICT" class="hover:underline">
+                            <Icon name="i-simple-icons-github" style="color: white" />
+                        </NuxtLink>
+                    </li>
                 </ul>
                 <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-white focus:outline-none" @click="toggleMobileMenu">
