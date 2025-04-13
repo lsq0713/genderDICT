@@ -52,16 +52,27 @@
         <div class="flex flex-grow relative">
             <!-- 左侧侧边栏 -->
             <aside :class="[
-                'bg-gray-100 p-4 overflow-y-auto transition-all duration-300 h-full',
+                'bg-gray-50 border-r border-gray-200 p-4 overflow-y-auto transition-all duration-300 h-full shadow-md',
                 isSidebarOpen ? 'w-1/4' : 'w-0 opacity-0'
             ]">
-                <ul v-if="isSidebarOpen" class="mt-10">
-                    <li v-for="post in posts" :key="post.id" class="mb-2">
-                        <NuxtLink :to="post.path" class="block text-gray-700 hover:text-blue-500">
-                            {{ post.title }}
+                <div v-if="isSidebarOpen" class="mt-4">
+                    <!-- 侧边栏标题 -->
+                    <h2 class="text-lg font-semibold text-gray-800 border-b pb-2 mb-4">
+                        词条目录
+                        <NuxtLink to="/search"
+                            class="px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+                            <Icon name="i-lucide-search" style="color: black" />
                         </NuxtLink>
-                    </li>
-                </ul>
+                    </h2>
+                    <ul class="space-y-2">
+                        <li v-for="post in posts" :key="post.id">
+                            <NuxtLink :to="post.path"
+                                class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+                                {{ post.title }}
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                </div>
             </aside>
 
             <!-- 浮动按钮 -->
