@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen flex flex-col">
         <!-- 导航栏 -->
-        <header class="bg-blue-500 text-white py-4 shadow-md">
+        <header class="bg-fudan-blue text-white py-4 shadow-md">
             <nav class="container mx-auto flex justify-between items-center">
                 <h1 class="text-2xl font-bold">性别研究词典</h1>
                 <ul class="hidden md:flex space-x-4">
